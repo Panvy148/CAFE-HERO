@@ -1,362 +1,657 @@
-Prompt Pembuatan Website Kafe
-
-Buat sebuah website kafe modern hanya menggunakan 1 file, yaitu "index.html". Jangan membuat file lain seperti "style.css" atau "script.js".
-
-Input dari User
-
-Sebelum membuat website, minta user mengisi data berikut:
-
-- Nama Kafe: [KAFE HERO]
-- Slogan: [SEDUH KEHANGATAN, NIKMAT KEBERSAMAAN]
-- Alamat: [JL. Raya aja]
-- WhatsApp: [0812345678]
-- Email: [kfhero@gmail.com]
-- Jam Operasional: [08.00]
-- Warna Tema: [coklat crem]
-
-Gunakan seluruh data di atas secara konsisten di seluruh website. Jika ada data yang tidak diisi, gunakan nilai default yang sesuai.
-
----
-
-Struktur Folder
-
-/
-└── index.html
-
----
-
-Ketentuan
-
-- Seluruh HTML, CSS, dan JavaScript berada di dalam file "index.html".
-- CSS ditulis di dalam tag "<style>" pada bagian "<head>".
-- JavaScript ditulis di dalam tag "<script>" sebelum "</body>".
-- Gunakan HTML5 Semantic.
-- Jangan menggunakan framework seperti Bootstrap, Tailwind, React, Vue, Angular, atau library UI lainnya.
-- Gunakan Font Awesome CDN untuk ikon.
-- Kode harus rapi, terstruktur, diberi komentar pada setiap section, dan mudah dikembangkan.
-- Website harus dapat dijalankan langsung hanya dengan membuka file "index.html".
-
----
-
-Desain
-
-- Modern
-- Minimalis
-- Elegan
-- Premium
-- Responsif (Desktop, Tablet, Mobile)
-- Animasi halus
-- Efek hover modern
-- Smooth scrolling
-- Warna mengikuti input user
-
----
-
-Struktur Website
-
-1. Navbar
-
-Berisi:
-
-- Logo / Nama Kafe
-- Beranda
-- Menu
-- Tentang
-- Galeri
-- Testimoni
-- Kontak
-- Pesan Sekarang
-
-Fitur:
-
-- Sticky Navbar
-- Hamburger Menu
-- Active Menu saat scroll
-
----
-
-2. Hero Section
-
-Berisi:
-
-- Background berkualitas tinggi
-- Nama Kafe
-- Slogan
-- Tombol "Lihat Menu"
-- Tombol "Pesan Sekarang"
-
----
-
-3. Menu
-
-Minimal terdapat 8 menu.
-
-Setiap menu memiliki:
-
-- Foto
-- Nama
-- Deskripsi
-- Harga
-- Tombol Tambah ke Keranjang
-
-Gunakan card modern dengan animasi hover.
-
----
-
-4. Tentang Kami
-
-Berisi:
-
-- Cerita singkat
-- Visi
-- Misi
-- Foto interior
-
----
-
-5. Galeri
-
-Grid foto responsif.
-
-Efek:
-
-- Hover Zoom
-- Lightbox sederhana
-
----
-
-6. Testimoni
-
-Minimal 3 pelanggan.
-
-Berisi:
-
-- Foto
-- Nama
-- Rating
-- Komentar
-
----
-
-7. Kontak
-
-Berisi:
-
-- Alamat
-- WhatsApp
-- Email
-- Jam Operasional
-- Form Kontak
-- Google Maps Embed
-
----
-
-8. Footer
-
-Berisi:
-
-- Nama Kafe
-- Copyright
-- Media Sosial
-- Quick Links
-
----
-
-Halaman Pemesanan
-
-Tambahkan sistem pemesanan modern.
-
-Keranjang Belanja
-
-User dapat:
-
-- Menambah menu
-- Mengurangi jumlah
-- Menghapus menu
-- Melihat subtotal
-- Melihat total
-
-Total berubah otomatis.
-
----
-
-Data Pemesan
-
-Form berisi:
-
-- Nama
-- Nomor WhatsApp
-- Nomor Meja (Opsional)
-- Catatan Pesanan (Opsional)
-
-Semua wajib divalidasi.
-
----
-
-Ringkasan Pesanan
-
-Tampilkan:
-
-- Daftar menu
-- Jumlah
-- Harga
-- Subtotal
-- Pajak (Opsional)
-- Total Bayar
-
----
-
-Metode Pembayaran
-
-User dapat memilih salah satu metode berikut:
-
-- QRIS
-- Transfer Bank
-- GoPay
-- OVO
-- DANA
-- ShopeePay
-- COD (Bayar di Tempat)
-
-Setelah dipilih, tampilkan informasi pembayaran yang sesuai.
-
-Misalnya:
-
-QRIS
-
-- Tampilkan QR Code Placeholder
-
-Transfer Bank
-
-- Nama Bank
-- Nomor Rekening
-- Atas Nama
-
-E-Wallet
-
-- Nomor Tujuan
-- Nama Pemilik
-
-COD
-
-- Informasi pembayaran saat pesanan diterima.
-
----
-
-Konfirmasi Pesanan
-
-Setelah tombol Pesan Sekarang ditekan:
-
-Tampilkan halaman konfirmasi berisi:
-
-- Nomor Pesanan (Order ID otomatis)
-- Nama Pemesan
-- Daftar Pesanan
-- Total Bayar
-- Metode Pembayaran
-- Status:
-  - Menunggu Pembayaran
-  - Menunggu Diproses
-  - Berhasil
-
-Tambahkan tombol:
-
-- Konfirmasi Pembayaran
-
----
-
-Halaman Terima Kasih
-
-Setelah pembayaran berhasil dikonfirmasi tampilkan halaman:
-
-✅ Terima Kasih Atas Pesanan Anda!
-
-Pesanan Anda sedang diproses.
-
-Informasi:
-
-- Order ID
-- Nama Pemesan
-- Total Pembayaran
-- Metode Pembayaran
-
-Tambahkan tombol:
-
-- Beri Penilaian
-
----
-
-Rating Kepuasan Pelanggan
-
-Saat tombol Beri Penilaian ditekan tampilkan:
-
-- Rating Bintang 1 sampai 5
-- Emoji sesuai rating
-- Kolom komentar
-- Tombol Kirim Penilaian
-
----
-
-Setelah Rating
-
-Setelah rating berhasil dikirim:
-
-Tampilkan pesan:
-
-"Terima kasih atas penilaian Anda."
-
-Lalu tampilkan tombol:
-
-Kembali ke Menu
-
-Saat ditekan kembali ke halaman utama.
-
----
-
-Fitur Tambahan
-
-Tambahkan:
-
-- Shopping Cart
-- Loading Screen
-- Back To Top
-- Sticky Navbar
-- Fade Animation
-- Scroll Reveal
-- Smooth Scroll
-- Hover Animation
-- Mobile Menu
-- Search Menu
-- Filter Menu berdasarkan kategori
-- Validasi Form
-- Nomor Pesanan otomatis
-- LocalStorage untuk menyimpan keranjang dan data sementara
-- Transisi halus antar section tanpa reload halaman
-- Placeholder gambar jika gambar asli tidak tersedia
-
----
-
-SEO
-
-Tambahkan:
-
-- Title
-- Meta Description
-- Meta Keywords
-- Meta Viewport
-- Favicon Placeholder
-- Open Graph dasar
-
----
-
-Kualitas Kode
-
-- Gunakan HTML, CSS, dan JavaScript murni.
-- Jangan menggunakan framework.
-- Jangan membuat file selain "index.html".
-- Gunakan komentar pada setiap bagian.
-- Gunakan indentasi yang rapi.
-- Optimalkan performa.
-- Pastikan seluruh fitur berfungsi tanpa error.
-
-Hasil akhir harus berupa website kafe profesional dengan alur lengkap mulai dari melihat menu, memesan, memilih metode pembayaran, konfirmasi pesanan, halaman terima kasih, memberikan rating kepuasan pelanggan, hingga kembali ke menu utama. Seluruh fungsi harus berjalan dalam satu file "index.html".
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafe Hero - Seduh Kehangatan, Nikmati Cerita</title>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- VARIASI WARNA TEMA HANGAT --- */
+        :root {
+            --bg-color: #faf6f0;
+            --card-bg: #ffffff;
+            --primary-color: #4a2c2a;    /* Cokelat Tua */
+            --secondary-color: #8c6239;  /* Cokelat Sedang */
+            --accent-gold: #d4af37;      /* Aksen Emas */
+            --text-dark: #2b2b2b;
+            --text-light: #767676;
+            --white: #ffffff;
+            --danger: #e74c3c;
+            --border-color: #e2d7c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER & NAVIGASI --- */
+        .header {
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--white);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: var(--accent-gold);
+        }
+
+        .cart-icon-btn {
+            background: var(--accent-gold);
+            color: var(--primary-color);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #cart-count {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            padding: 2px 7px;
+            font-size: 0.8rem;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(74, 44, 42, 0.7);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content h1 span {
+            color: var(--accent-gold);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #b89528;
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .btn-block {
+            width: 100%;
+            padding: 12px;
+        }
+
+        /* --- PROMO SECTION --- */
+        .promo-section {
+            margin: 30px auto;
+        }
+
+        .promo-card {
+            background-color: #fff9e6;
+            border: 2px dashed var(--accent-gold);
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .promo-icon {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+        }
+
+        /* --- MENU SECTION --- */
+        .menu-section {
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .category-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .cat-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--secondary-color);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .cat-btn.active, .cat-btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-info {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .menu-info h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .menu-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .menu-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        /* --- MODAL KERANJANG --- */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 200;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--white);
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            border-radius: 10px;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .close-btn {
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cart-item-controls button {
+            background: var(--border-color);
+            border: none;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .cart-summary {
+            background: #fdfaf5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .summary-row.total {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            border-top: 1px dashed #ccc;
+            padding-top: 5px;
+        }
+
+        /* --- FORM PEMESANAN --- */
+        .checkout-form {
+            margin-top: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        /* --- GIMMICK: SPIN & WIN --- */
+        .spin-container {
+            text-align: center;
+            margin: 20px 0;
+            background: #fef9ed;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .hidden { display: none; }
+
+        .wheel-wrapper {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 15px auto;
+        }
+
+        .pointer {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: var(--danger);
+            font-size: 1.2rem;
+        }
+
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-color);
+            position: relative;
+            overflow: hidden;
+            transition: transform 3s cubic-bezier(0.15, 0.99, 0.15, 0.99);
+        }
+
+        .segment {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            transform-origin: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .seg1 { background-color: #e67e22; transform: rotate(0deg); }
+        .seg2 { background-color: #27ae60; transform: rotate(90deg); }
+        .seg3 { background-color: #2980b9; transform: rotate(180deg); }
+        .seg4 { background-color: #c0392b; transform: rotate(270deg); }
+
+        /* --- GIMMICK: NOTIFIKASI PEMBUATAN KOPI --- */
+        .coffee-loader-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 300;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader-card {
+            background: var(--white);
+            padding: 25px 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .spinning-cup {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            animation: spin 1s infinite linear;
+            margin-bottom: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding-top: 40px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 15px;
+            background: #361f1e;
+            font-size: 0.85rem;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .hero-content h1 { font-size: 2rem; }
+            .nav-container { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-mug-hot"></i> Kafe <span>Hero</span>
+            </a>
+            <nav class="navbar">
+                <a href="#menu"><i class="fa-solid fa-utensils"></i> Menu</a>
+                <a href="#promo"><i class="fa-solid fa-tags"></i> Promo</a>
+                <button id="cart-btn" class="cart-icon-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Selamat Datang di <span>Kafe Hero</span></h1>
+            <p>"Seduh kehangatan, nikmati kebersamaan di setiap cangkir."</p>
+            <a href="#menu" class="btn btn-primary">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Section Promo -->
+    <section id="promo" class="promo-section container">
+        <div class="promo-card">
+            <i class="fa-solid fa-gift promo-icon"></i>
+            <div>
+                <h3>Spesial Spin & Win!</h3>
+                <p>Belanja minimal <strong>Rp 50.000</strong> dan putar roda keberuntungan di keranjang untuk mendapatkan diskon hingga 20% atau Gratis Ongkir!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu" class="menu-section container">
+        <h2 class="section-title">Daftar Menu Kami</h2>
+        
+        <!-- Filter Kategori -->
+        <div class="category-buttons">
+            <button class="cat-btn active" data-category="all">Semua</button>
+            <button class="cat-btn" data-category="Minuman">Minuman</button>
+            <button class="cat-btn" data-category="Makanan Ringan">Makanan Ringan</button>
+            <button class="cat-btn" data-category="Dessert">Dessert</button>
+        </div>
+
+        <!-- Grid Item Menu -->
+        <div id="menu-grid" class="menu-grid">
+            <!-- Item menu dirender oleh JS -->
+        </div>
+    </section>
+
+    <!-- Modal Keranjang Belanja -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fa-solid fa-basket-shopping"></i> Keranjang Pesanan</h2>
+                <span class="close-btn" id="close-cart">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items" class="cart-items-list">
+                    <!-- Item keranjang dirender JS -->
+                </div>
+
+                <!-- Gimmick: Spin & Win -->
+                <div id="spin-win-container" class="spin-container hidden">
+                    <hr>
+                    <h3 style="margin-top:10px;"><i class="fa-solid fa-dharmachakra"></i> Spin & Win Promo</h3>
+                    <p>Selamat! Total belanjaanmu memenuhi syarat untuk memutar roda keberuntungan.</p>
+                    <div class="wheel-wrapper">
+                        <div class="pointer">▼</div>
+                        <div id="wheel" class="wheel">
+                            <div class="segment seg1">10%</div>
+                            <div class="segment seg2">20%</div>
+                            <div class="segment seg3">Gratis Ongkir</div>
+                            <div class="segment seg4">Zonk</div>
+                        </div>
+                    </div>
+                    <button id="spin-btn" class="btn btn-secondary">Putar Roda</button>
+                    <p id="spin-result" class="spin-result-text" style="margin-top:8px; font-weight:bold;"></p>
+                </div>
+
+                <!-- Rincian Pembayaran -->
+                <div class="cart-summary">
+                    <div class="summary-row"><span>Subtotal:</span> <span id="subtotal-val">Rp 0</span></div>
+                    <div class="summary-row"><span>Diskon:</span> <span id="discount-val">Rp 0</span></div>
+                    <div class="summary-row total"><span>Total Bayar:</span> <span id="total-val">Rp 0</span></div>
+                </div>
+
+                <!-- Form Pemesanan -->
+                <form id="checkout-form" class="checkout-form">
+                    <h3>Detail Pemesan</h3>
+                    <div class="form-group">
+                        <label for="cust-name">Nama Pemesan</label>
+                        <input type="text" id="cust-name" required placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="table-num">Nomor Meja / Alamat</label>
+                        <input type="text" id="table-num" required placeholder="Contoh: Meja 05 / Jl. Mawar No. 12">
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Metode Pembayaran</label>
+                        <select id="payment-method" required>
+                            <option value="QRIS (Gopay/OVO/Dana)">QRIS (Gopay/OVO/Dana)</option>
+                            <option value="Transfer Bank">Transfer Bank</option>
+                            <option value="Tunai di Kasir">Tunai di Kasir</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Catatan Tambahan</label>
+                        <textarea id="notes" placeholder="Contoh: Es sedikit, Kurangi gula"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Checkout Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Gimmick "Kopi sedang dibuat" -->
+    <div id="coffee-loader" class="coffee-loader-overlay">
+        <div class="loader-card">
+            <i class="fa-solid fa-mug-hot spinning-cup"></i>
+            <p>Kopi sedang diseduh & ditambahkan ke keranjang...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-mug-hot"></i> Kafe Hero</h3>
+                <p>Menyajikan kopi kualitas terbaik dengan suasana hangat dan nyaman untuk setiap momen Anda.</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Jam Operasional</h4>
+                <p><i class="fa-regular fa-clock"></i> Senin - Jumat: 08:00 - 22:00 WIB</p>
+                <p><i class="fa-regular fa-clock"></i> Sabtu - Minggu: 08:00 - 23:00 WIB</p>
